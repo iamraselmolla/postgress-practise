@@ -1,8 +1,13 @@
-CREATE Table employee(
-id int not null primary key SERIAL,
-name varchar(50) not null,
-email varchar(50) not null,
-phone varchar(50) not null,
-address varchar(50) not null,
-password varchar(50) not null
+create Table employee(
+    employee_id SERIAL primary key,
+    employee_name varchar(20) NOT NULL,
+    deptID int NOT NULL,
+    constraint fk_constraint_dept,
+    Foreign Key (deptID) REFERENCES (deptID),
+);
+
+create table department(
+    deptID SERIAL primary key,
+    dept_name varchar(20)
+
 );
