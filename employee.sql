@@ -13,7 +13,7 @@ CREATE TABLE employee (
 );
 
 insert into Employee  (employee_name, deptID) values ('John', 1);
-
+select * from Employee;
 -- Insert data into the department table
 INSERT INTO department (deptID, dept_name) VALUES (1, 'IT');
 INSERT INTO department (deptID, dept_name) VALUES (2, 'HR');
